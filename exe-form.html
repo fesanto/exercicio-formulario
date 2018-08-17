@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title>Exe Form</title>
+                <link rel="stylesheet" href="./css/exe-formstyle.css">
+        </head>
+
+<body>
+        <form action="obrigada.html" method="GET">
+
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div>
+            <label for="senha">Senha</label>
+            <input type="text" name="senha">
+        </div>
+
+        <div>
+            <label for="qualidades">Escolha uma ou múltiplas opções:</label>
+                <input type="checkbox" name="qualidade" value="mulher"><label for="qualidade">Mulher</label>
+                <input type="checkbox" name="qualidade" value="poderosa"><label for="qualidade">Poderosa</label>
+                <input type="checkbox" name="qualidade" value="linda"><label for="qualidade">Linda</label>
+                <input type="checkbox" name="qualidade" value="maravilhosa"><label for="qualidade">Maravilhosa</label>
+        </div>
+
+        <div>
+            <label for="atributos">Escolha uma opção:</label>
+            <input type="radio" name="atributos" value="super força"><label for="atributos">Super força</label>
+            <input type="radio" name="atributos" value="ser invisível"><label for="atributos">Ser invisível</label>
+            <input type="radio" name="atributos" value="ler mentes"><label for="atributos">Ler mentes</label>
+            <input type="radio" name="atributos" value="super velocidade"><label for="atributos">Super velocidade</label>
+        </div>
+        <div>
+            <label for="assunto">Selecione:</label>
+            <select name="assunto">
+                <option value="livre">Livre</option>
+                <option value="desimpedida">Desimpedida</option>
+                <option value="esplendorosa">Esplendorosa</option>
+            </select>
+        </div>
+      
+        <div>
+            <label for="assunto">Escolha um valor:</label>
+            <select name="assunto">
+                <option type="number">100</option>
+                <option type="number">200</option>
+                <option type="number">300</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comentario">Comentários</label>
+            <textarea maxlength="100" name="comentarios" rows:"10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</body>
+</html>

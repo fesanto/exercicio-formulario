@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html>
+
+<style>
+
+form{
+    width: 500px;
+    margin:0 auto;
+    padding-top: 90px;
+}
+
+form > div{
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+
+}
+
+textarea[rows="3"] {
+
+}
+</style>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio Formulário</title>
+</head>
+
+<body>
+    <form action="obrigada.html" method="GET"> <!--A tag form precisa de 2 atributos > Action:pra onde vao enviar meus dados/ Method: como vou enviar esses dados e pode ter 2 valores: GET(msotra dados na URL) e POST(não mostra dados na URL)-->
+       
+        <div>
+        <label for="nome">Seu nome</label> <!--Label: mais uma dica p o usuario para indicar o que pede o campo, aparece na parte externa/é mais acessivel q leitor de tela. Se,pre bom aocmpanhar o input c label-->
+        <input type="text" name="nome" placeholder="Seu nome"> <!--placeholder: dica para o usuáruio do significado do campo-->
+        </div>
+
+        <div>
+        <label for="">Seu sobrenome</label> 
+        <input type="text" name="sobrenome" placeholder="Seu sobrenome">
+        </div>
+
+        <div>
+        <label for="email">Seu email</label>
+        <input type "email" name="email" placeholder="Seu email" required>
+        </div>
+
+        <div>
+            <input type="radio" name="planta" value="lavanda"><label for="planta">Lavanda</label> <!--radio: consegue selecionar uma opção apenas-->
+            <input type="radio" name="planta" value="alecrim"><label for="planta">Alecrim</label>
+            <input type="radio" name="planta" value="manjericao"><label for="planta">Manjericão</label>
+        </div>
+
+        <div>
+            <label for"assunto">Escolha um sabor de pizza</label>
+                
+                <input type="checkbox" name="pizza" value="calabresa"><label for="pizza">Calabresa</label> <!--checkbox consegue selecionar multiplas opções-->
+                <input type="checkbox" name="pizza" value="marguerita"><label for="pizza">Marguerita</label>
+                <input type="checkbox" name="pizza" value="quatro-queijos"><label for="pizza">Quatro Queijos</label>
+               
+        </div>
+
+
+        <div>
+            <label for "assunto">Escolha seu assunto</label>
+            <select name="assunto"> <!--cria um dropdown com opções de tipos de comentário será feito-->
+                <option value="sugestao">Sugestão</option>
+                <option value="critica">Crítica</option>
+                <option value="elogio">Elogio</option>
+            </select>
+        </div>
+
+        <div>
+        <label for="comentario">Seu comentario</label>
+        <textarea maxlength="100" name="comentarios" rows="7"></textarea>
+        </div>
+
+        <div>
+        <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+</body>
+</html>

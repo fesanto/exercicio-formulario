@@ -1,0 +1,25 @@
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding-top: 90px;
+}
+
+form > div{
+
+    margin-top: 30px;
+}
+
+input[type="radio"]{
+    display: block;
+    
+}
+
+input[type="checkbox"]{
+    display: block;
+    
+}
+
+.botao{
+    
+    
+}
